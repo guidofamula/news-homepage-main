@@ -1,26 +1,23 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer base {
+  :root {
+    /* For hsl(198deg 93% 60% / <alpha-value>) */
+    /*  Primary  */
+    --soft-orange: 35deg 77% 62%;
+    --soft-red: 5deg 85% 63%;
 
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+    /*  Neutral  */
+    --off-white: 36deg 100% 99%;
+    --grayish-blue: 233deg 8% 79%;
+    --dark-grayish-blue: 236deg 13% 42%;
+    --very-dark-blue: 240deg 100% 5%;
   }
-  body {
-    color: white;
-    background: black;
-  }
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/fonts/Inter-VariableFont_slnt,wght.ttf");
 }
