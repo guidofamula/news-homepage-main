@@ -27,8 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-**Desktop View**
-![](./public/images/screenshots/desktop-view.png)
+**Desktop View** ![](./public/images/screenshots/desktop-view.png)
 
 **Mobile View**
 
@@ -36,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [challenge01.guidofamula.com](https://challenge01.guidofamula.com)
+- Live Site URL: [Challenge 01](https://challenge01-amber.vercel.app/)
 
 ## My process
 
