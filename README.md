@@ -31,6 +31,7 @@ Users should be able to:
 ![](./public/images/screenshots/desktop-view.png)
 
 **Mobile View**
+
 ![](./public/images/screenshots/mobile-view.png)
 
 ### Links
