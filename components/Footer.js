@@ -5,18 +5,18 @@ const Footer = () => {
   return (
     <div className='mt-4'>
       {challenge.map((credit) => (
-        <footer className='bg-netral-blue bg-opacity-70 text-center desktop:text-left'>
+        <footer key={credit.id} className='bg-netral-blue bg-opacity-70 text-center desktop:text-left'>
           <h5 className='text-netral-darkblue text-center p-4 text-[12px]'>
             Challenge by{' '}
             <span className='cursor-pointer hover:text-primary-red desktop:font-semibold'>
-              <a target='_blank' href={credit.linkMentor}>
+              <a target='_blank' rel='noreferrer' href={credit.linkMentor}>
                 {credit.challengeBy}
               </a>
             </span>{' '}
             Coded by{' '}
             <span className='cursor-pointer hover:text-primary-red desktop:font-semibold'>
               {' '}
-              <a target='_blank' href={credit.linkCoder}>
+              <a target='_blank' rel='noreferrer' href={credit.linkCoder}>
                 {credit.CodedBy}
               </a>
             </span>

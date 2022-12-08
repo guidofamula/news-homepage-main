@@ -2,10 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import { ImageWeb3Desktop } from '../../public/indexImages';
 
-const FeaturedPost = () => {
+const FeaturedPost = ({ prop }) => {
   return (
     <div className='mobile:h-[520px] w-[350px] desktop:p-4 desktop:w-[650px] desktop:h-[500px]'>
-      <Image src={ImageWeb3Desktop} className='h-[200px] w-[300px] mx-auto desktop:w-[550px] desktop:h-[280px] desktop:ml-3' />
+      <Image alt='The bright desktop wallpaper' src={ImageWeb3Desktop} className='h-[200px] w-[300px] mx-auto desktop:w-[550px] desktop:h-[280px] desktop:ml-3' />
       <div className='desktop:flex p-4'>
         <h1 className='text-5xl desktop:flex-initial desktop:w-[365px] font-extrabold left-5'>The Bright Future of Web 3.0?</h1>
         <div className='mt-2 desktop:flex-col desktop:flex-initial desktop:w-[360px] desktop:mt-1 font-light desktop:text-[13px] desktop:mr-9'>
