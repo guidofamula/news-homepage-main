@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
-import { HeaderContainer, BodyContainer, Footer } from '../components/index';
+import { HeaderContainer, BodyContainer, Footer } from "../components/index";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.png' />
         <title>Frontend Mentor | News homepage</title>
       </Head>
-      <div className='container mx-auto desktop:py-6 desktop:px-12 desktop:my-5 bg-netral-white shadow-lg'>
+      <div className='overflow-hidden container mx-auto desktop:py-6 desktop:px-12 desktop:my-5 bg-netral-white shadow-lg'>
         <HeaderContainer />
         <BodyContainer />
         <Footer />
