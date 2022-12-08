@@ -1,25 +1,30 @@
 import { IconMenuClose, IconMenu, ImageGamingGrowth, ImageRetro, ImageTopLaptop, ImageWeb3Desktop, ImageWeb3Mobile, Logo } from '../public/indexImages';
 
-export const LinkNavbar = [
+export const linknavbar = [
   {
     id: 'home',
     title: 'Home',
+    linkSite: '/',
   },
   {
     id: 'new',
     title: 'New',
+    linkSite: '/#new',
   },
   {
     id: 'popular',
     title: 'Popular',
+    linkSite: '/#popular',
   },
   {
     id: 'trending',
     title: 'Trending',
+    linkSite: '/#trending',
   },
   {
     id: 'categories',
     title: 'Categories',
+    linkSite: '/#categories',
   },
 ];
 
@@ -79,6 +84,8 @@ export const challenge = [
   {
     id: 'challenge1',
     challengeBy: 'Frontend Mentor',
+    linkMentor: 'https://www.frontendmentor.io?ref=challenge',
     CodedBy: 'Guido Famula',
+    linkCoder: 'https://guidofamula.com/',
   },
 ];

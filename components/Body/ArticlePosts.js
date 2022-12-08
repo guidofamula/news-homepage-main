@@ -4,40 +4,21 @@ import Image from 'next/image';
 
 const ArticlePosts = () => {
   return (
-    <div className='desktop:flex desktop:flex-row'>
+    <div className='desktop:flex  desktop:w-auto desktop:flex-row desktop:mx-2 desktop:px-2'>
       {listarticle.map((list) => (
-        <div className='flex flex-row'>
-          <div className='mobile:min-h-full mobile:pt-2 mobile:min-w-fit' key={list.id}>
-            <Image className='desktop:h-[180px] desktop:w-[120px] p-4 h-auto' src={list.image} />
+        <div className='flex desktop:mx-auto desktop:w-full'>
+          <div className='min-h-full pt-2 min-w-fit' key={list.id}>
+            <Image className=' h-[180px] desktop:h-auto w-[120px] p-4' src={list.image} />
           </div>
-          <div className=' mobile:mt-5'>
-            <h1>{list.number}</h1>
-            <h2>{list.title}</h2>
-            <p>{list.excerpt}</p>
+          <div className='mt-5 pr-2'>
+            <h1 className='text-[38px] text-netral-verydarkblue desktop:-mt-2 text-opacity-30'>{list.number}</h1>
+            <h2 className='text-[18px] desktop:text-[15px] font-bold cursor-pointer text-netral-verydarkblue hover:text-primary-red'>{list.title}</h2>
+            <p className='mt-2 leading-normal text-netral-verydarkblue text-opacity-60 desktop:text-[12px]  text-[16px]'>{list.excerpt}</p>
           </div>
         </div>
       ))}
     </div>
   );
 };
-
-// const ArticlePosts = () => {
-//   return (
-//     <div className='mt-4 desktop:flex desktop:flex-row'>
-//       {listarticle.map((list) => (
-//         <div className='flex justify-center mobile:flex-col'>
-//           <div className='flex flex-col mobile:flex-row mobile:max-w-xl rounded-lg bg-white shadow-lg'>
-//             <Image className='w-full desktop:h-96 mobile:h-auto object-cover desktop:w-48 rounded-t-lg mobile:rounded-none mobile:rounded-l-lg p-4' src={list.image} />
-//             <div className='p-6 flex flex-col justify-start'>
-//               <h1 className='text-gray-900 text-xl font-medium mb-2'>{list.number}</h1>
-//               <h2 className='text-gray-700 text-base mb-4'>{list.title}</h2>
-//               <p className='text-gray-600 text-xs'>{list.excerpt}</p>
-//             </div>
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
 
 export default ArticlePosts;

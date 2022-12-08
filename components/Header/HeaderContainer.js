@@ -11,7 +11,7 @@ const HeaderContainer = () => {
           <Navmenu />
         </div>
       </div>
-      <div className='desktop:flex desktop:flex-row min-h-screen'>
+      <div className='desktop:flex desktop:flex-row'>
         <FeaturedPost />
         <SideHeader />
       </div>

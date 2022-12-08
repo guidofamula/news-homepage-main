@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-import { HeaderContainer, BodyContainer } from '../components/index';
+import { HeaderContainer, BodyContainer, Footer } from '../components/index';
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <div className='container mx-auto desktop:py-6 desktop:px-12 desktop:my-5 bg-netral-white shadow-lg'>
         <HeaderContainer />
         <BodyContainer />
+        <Footer />
       </div>
     </>
   );
